@@ -11,8 +11,6 @@ export default function Todo(){
         setName('')
        
     }
-  
-    setList(list.filter)
     return(
 
         <>
@@ -20,7 +18,7 @@ export default function Todo(){
 
             <form className="">
                 <input type="text"  value={name} onChange={(e)=> setName(e.target.value)} className="h-10"/>
-                <button onClick={sub} className="bg-blue-500">Click</button>
+                <button onClick={sub} className="bg-blue-500 p-5 ring-2 rounded-2xl ring-orange-900">Click</button>
             </form>
             
            {list.map((item, index)=> <section key={index}>{item}</section>)}
